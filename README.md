@@ -18,6 +18,7 @@ This is the last section of most README. It lets other developers know what they
 
 
 What was your motivation?
+To focus on tasks at hand and to remove distractions. 
 Why did you build this project?
 What problem does it solve?
 What did you learn?
