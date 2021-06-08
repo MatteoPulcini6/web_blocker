@@ -1,13 +1,34 @@
-
-import time;
+import tkinter as tk
 from datetime import datetime as dt;
+from tkinter import *
+import tkinter
 
 hosts_temp = "hosts"
 hosts_path = r"/private/etc/hosts"
 redirect = "127.0.0.1"
-website_list=["www.facebook.com", "facebook.com", "www.reddit.com", "reddit.com", "www.amazon.com", "amazon.com"]
+website_list=[]
 
-while True: 
+master= tk.Tk()
+master.title("Website Blocker")
+
+#Create List
+listBox = tkinter.Listbox(master)
+listBox.pack()
+
+#Create textbox
+entry = tk.Entry (master) 
+entry.pack()
+
+def list_add():
+    website_list.append(entry.get())
+    print(website_list)
+    listBox.insert(END, entry.get())
+    entry.delete(0,END)
+
+def list_remove():
+    listBox.delete(listBox.curselection())
+
+def block():
     if dt(dt.now().year,dt.now().month,dt.now().day,8) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,16):
         print("working hours")
         with open(hosts_path, 'r+') as file:
@@ -27,7 +48,15 @@ while True:
                     file.write(line)
             file.truncate()
     
-    time.sleep(5);
+    master.after(90000, block)
 
+button_add = tk.Button(master, text ="Add Website", command=list_add) 
+button_add.pack()
 
-#python blockers.py
+button_remove = tk.Button(master, text ="Remove Website", command=list_remove)
+button_remove.pack()
+
+button_block = tk.Button(master, text ="Block", command=block) 
+button_block.pack()
+
+master.mainloop()
