@@ -21,6 +21,9 @@ What was your motivation?
 To focus on tasks at hand and to remove distractions. 
 Why did you build this project?
 What problem does it solve?
+Accessing hosts files on Mac
+Using 'Sudo' on Mac to access admin controls 
+
 What did you learn?
 What makes your project stand out? If your project has a lot of features, consider adding a "Features" section and listing them here.
 
