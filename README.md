@@ -1,29 +1,9 @@
 # Website Blocker
 
+The goal of This project is to blocks websites to remove distractions during a specific period of the day. This would not be possible without TechnoDine https://www.youtube.com/watch?v=Ox_fhU7HKl0. The original application hard coded specific times and websites which blocks users from accessing specified websites. The goal of this project is to add a GUI, make the application dynamic, and allow users to set working hours to block distracting websites from being accessible from their computers. This was created to address a friends problem of procrasnating using Reddit when studying. 
 
+This project was created on Mac OS and to install this project the user needs to access the host's file in the finder. To start the project run the code in the terminal using sudo to allow for permission. 
 
-This projects goal is to blocks websites to remove distractions during a specific period of the day. This would not be possible without TechnoDine https://www.youtube.com/watch?v=Ox_fhU7HKl0. The origional application hard coded specific times and websites which blocks users from accessing specified websites. The goal of this project is to add a GUI, make the application dynamic and allow users to set working hours and distracting websites. 
+This project provides a drop-down menu of certain websites to block during typical working hours of 8 to 4. This can be modified to individual schedules to suit individual needs by a developer. A problem, however, is that websites cannot be removed and I plan to release a new solution soon. 
 
-
-How to Install Your Project
-If your project is software or an app that needs installation, you should include the steps required to install your project. Provide a step-by-step description of how to get the development environment running.
-
-How to Use Your Project
-Provide instructions and examples so users/contributors can use the project. This will make it easy for them in case they encounter a problem – they will always have a place of reference.
-
-Also, if you followed tutorials to build that particular project, include links to those here as well. This is just a way to show your appreciation and also to help others get a first hand copy of the project.
-
-List the License
-This is the last section of most README. It lets other developers know what they can and cannot do with your project. If you need help choosing a license, use https://choosealicense.com/
-
-
-What was your motivation?
-To focus on tasks at hand and to remove distractions. 
-Why did you build this project?
-What problem does it solve?
-Accessing hosts files on Mac
-Using 'Sudo' on Mac to access admin controls 
-
-What did you learn?
-What makes your project stand out? If your project has a lot of features, consider adding a "Features" section and listing them here.
 
